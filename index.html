@@ -18,7 +18,7 @@
 
             </div>
             <div class="form_content">
-                <form onClick="submitNow()" action="">
+                <form onsubmit="return submitNow()" action="submit.html">
                     <div class="row">
                         <div class="col-6"><input type="text" name="firstName" placeholder="First Name" required></div>
                         <div class="col-6"><input type="text" name="lastName" placeholder="Last Name" required></div>
@@ -31,7 +31,7 @@
                     <input type="password" name="confirmPassword" id="confirmPassWord" placeholder="Confirm Password" required><br><br>
                     <input type="submit" class="btn" value="Register Now" id="submitBtn" onClick="submitNow()"><br><br>
                     <div class="checkBox">
-                        <input type="checkbox" name="policyAccept"> I accept the <span>Term of Use</span> & <span>Privacy Policy</span>.
+                        <input type="checkbox" name="policyAccept" id="policyCheck"> I accept the <span>Term of Use</span> & <span>Privacy Policy</span>.
                     </div>
                 </form>
             </div>
