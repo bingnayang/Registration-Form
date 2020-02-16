@@ -1,3 +1,16 @@
+
+function checkPassword(){
+    var passwordOne = document.forms["form"]["password"].value;
+    var msg = document.getElementById('passwordMsg');
+    var passCheck = /^(?=.*\d)(?=.*[A-Za-z])(?=.*[!@#$%^&*]).{8,}$/;
+
+    if(passwordOne.match(passCheck)){
+        msg.innerHTML = "Good Password";
+    }else{
+        msg.innerHTML = "* At least 8 characters,<br /> * At least one numeric digit, <br />* At least one special character";
+    }
+}
+
 function submitNow(){
     var checkBox = document.getElementById("policyCheck");
     var passwordOne = document.forms["form"]["password"].value;

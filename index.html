@@ -26,8 +26,8 @@
                     <br>
                     <input type="text" name="userName" placeholder="User Name" required><br><br>
                     <input type="email" name="email" placeholder="Email" required><br><br>
-                    <input type="password" name="password" id="passWord" placeholder="Password" required><br>
-                    <progress max="10" value="0" id="strengthLevel"></progress><br>
+                    <input type="password" name="password" id="passWord" placeholder="Password" onkeyup="checkPassword()" required><br>
+                    <div id="passwordMsg"></div><br>
                     <input type="password" name="confirmPassword" id="confirmPassWord" placeholder="Confirm Password" required><br><br>
                     <input type="submit" class="btn" value="Register Now" id="submitBtn" onClick="submitNow()"><br><br>
                     <div class="checkBox">

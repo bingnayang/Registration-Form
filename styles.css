@@ -48,3 +48,8 @@ input[type=checkbox]{
 .checkBox{
     text-align: center;
 }
+#passwordMsg{
+    font-size: 12px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
